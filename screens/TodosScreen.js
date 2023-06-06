@@ -11,6 +11,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Checkbox from "expo-checkbox";
 import { Ionicons } from "@expo/vector-icons";
 import { useRef, useState } from "react";
+import Toast from "react-native-root-toast";
 
 function TodosScreen({ headerHeight }) {
   const [newTaskText, setNewTaskText] = useState();
@@ -40,6 +41,12 @@ function TodosScreen({ headerHeight }) {
         style: "destructive",
         onPress: () => {
           setTasks((tasks) => tasks.filter((task) => task.id !== taskId));
+          Toast.show("Task deleted!", {
+            duration: Toast.durations.LONG,
+            position: Toast.positions.CENTER,
+            backgroundColor: "rgb(0,33,66)",
+            textColor: "white",
+          });
         },
       },
     ]);
