@@ -1,5 +1,27 @@
 # React Native Apps in 30 minutes
 
+Fully functional iOS / Android Todo App using React Native and Expo.
+
+The idea (and UI) are based on the excellent "Make Apps with Danny" series created by Danny Connell:
+
+https://www.youtube.com/watch?v=GV-D85D9KJQ&list=PLAiDzIdBfy8gNfGuDuAEBCgBLczNMAo0o&index=2
+
+<p float="left" align="middle">
+  <img src="assets/screenshots/1.png" width="32%">
+  <img src="assets/screenshots/2.png" width="32%">
+  <img src="assets/screenshots/3.png" width="32%">
+</p>
+
+These App screenshots were made using Screenshots Pro (https://screenshots.pro/).
+
+Features:
+
+- Stylish custom header with image background
+- Custom drawer with user avatar
+- Drawer navigation to switch between Todos and Help screen
+- Fully functional: add tasks, mark them as done and delete them
+- Tasks use react local state
+
 # Good to know
 
 For the drawer navigator to work add the react-native-reanimated/plugin plugin in babel.config.js:
