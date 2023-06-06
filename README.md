@@ -21,9 +21,9 @@ Features:
 - Safearea using useSafeAreaInsets from "react-native-safe-area-context"
 - Drawer navigation to switch between Todos and Help screen
 - Fully functional: add tasks, mark them as done and delete them
-- Confirm deletion of tasks
-- Toast after succesful deletion of task
-- Tasks use react local state
+- Confirm task deletion
+- Show Toast after succesfull task deletion
+- Use React local state for state management
 
 # Good to know
 

@@ -31,7 +31,7 @@ function TodosScreen({ headerHeight }) {
   }
 
   function deleteTask(taskId) {
-    Alert.alert("Confirm", "Are you sure you want to delete task?", [
+    Alert.alert("Confirm", "Are you sure you want to delete this task?", [
       {
         text: "Cancel",
         style: "cancel",
