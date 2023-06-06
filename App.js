@@ -1,5 +1,5 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import { NavigationContainer, useNavigation } from "@react-navigation/native";
+import { NavigationContainer } from "@react-navigation/native";
 
 import { StatusBar } from "expo-status-bar";
 import { View, Image, Text, Dimensions, Pressable } from "react-native";

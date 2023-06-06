@@ -5,6 +5,7 @@ import {
   Text,
   Pressable,
   FlatList,
+  Alert,
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Checkbox from "expo-checkbox";
@@ -29,7 +30,19 @@ function TodosScreen({ headerHeight }) {
   }
 
   function deleteTask(taskId) {
-    setTasks((tasks) => tasks.filter((task) => task.id !== taskId));
+    Alert.alert("Confirm", "Are you sure you want to delete task?", [
+      {
+        text: "Cancel",
+        style: "cancel",
+      },
+      {
+        text: "OK",
+        style: "destructive",
+        onPress: () => {
+          setTasks((tasks) => tasks.filter((task) => task.id !== taskId));
+        },
+      },
+    ]);
   }
 
   function newTaskTextChangeHandler(newText) {
