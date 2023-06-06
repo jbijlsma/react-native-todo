@@ -2,15 +2,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import { NavigationContainer, useNavigation } from "@react-navigation/native";
 
 import { StatusBar } from "expo-status-bar";
-import {
-  StyleSheet,
-  View,
-  Image,
-  ImageBackground,
-  Text,
-  Dimensions,
-  Pressable,
-} from "react-native";
+import { View, Image, Text, Dimensions, Pressable } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 

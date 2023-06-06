@@ -87,7 +87,9 @@ function TodosScreen({ headerHeight }) {
                   onValueChange={toggleTaskDone.bind(this, task.id)}
                   style={styles.checkbox}
                 />
-                <Text style={styles.label}>{task.title}</Text>
+                <Text style={[styles.label, task.done && styles.done]}>
+                  {task.title}
+                </Text>
               </View>
               {task.done && (
                 <Pressable
@@ -200,6 +202,10 @@ const styles = StyleSheet.create({
   },
   noTasksIcon: {
     opacity: 0.6,
+  },
+  done: {
+    textDecorationLine: "line-through",
+    color: "#b9b7b7",
   },
 });
 
