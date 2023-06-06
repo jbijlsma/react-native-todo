@@ -18,6 +18,7 @@ Features:
 
 - Stylish custom header with image background
 - Custom drawer with user avatar
+- Safearea using useSafeAreaInsets from "react-native-safe-area-context"
 - Drawer navigation to switch between Todos and Help screen
 - Fully functional: add tasks, mark them as done and delete them
 - Tasks use react local state
